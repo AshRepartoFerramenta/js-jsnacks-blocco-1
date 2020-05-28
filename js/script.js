@@ -64,3 +64,28 @@ while (i < 5) {
   i++;
 }
 console.log(somma);
+
+
+ // Snack4
+//In un array sono contenuti i nomi degli invitati alla festa del grande
+//squadrone che ha vinto i mondiali di calcio nel 2006,
+// chiedi all’utente il suo cognome e comunicagli se può partecipare o no alla festa.
+
+//Inserire la lista dei campioni del mondo invitati al Gran Galà
+var listaInvitati = ['Buffon', 'Cannavaro', 'Nesta', 'Barzagli', 'Grosso', 'Pirlo', 'Del Piero', 'Gattuso', 'Totti', 'Materazzi', 'Toni', 'Oddo', 'Zaccardo','De Rossi','Zidane'];
+var nomeUtente = prompt('Qual è il tuo cognome?');
+
+
+//Inserire la variabile che indica il messaggio di non entrata
+var messaggio = 'Pussa via Crucco!';
+var i = 0;
+
+//Inserire le condizioni di entrata alla festa
+while (i < listaInvitati.length) {
+  var nomeCorrente = listaInvitati[i];
+  if (nomeUtente == nomeCorrente) {
+      //Inserire il messaggio di avvenuta vittoria e di entrata al party
+    messaggio = 'Campioni del mondo,campioni del mondo,campioni del mondo!';
+  }
+  i++;
+}
