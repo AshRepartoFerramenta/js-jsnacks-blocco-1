@@ -72,23 +72,23 @@ console.log(somma);
 // // chiedi all’utente il suo cognome e comunicagli se può partecipare o no alla festa.
 //
 // //Inserire la lista dei campioni del mondo invitati al Gran Galà
-// var listaInvitati = ['Buffon', 'Cannavaro', 'Nesta', 'Barzagli', 'Grosso', 'Pirlo', 'Del Piero', 'Gattuso', 'Totti', 'Materazzi', 'Toni', 'Oddo', 'Zaccardo','De Rossi','Zidane'];
-// var nomeUtente = prompt('Qual è il tuo cognome?');
-//
+var listaInvitati = ['Buffon', 'Cannavaro', 'Nesta', 'Barzagli', 'Grosso', 'Pirlo', 'Del Piero', 'Gattuso', 'Totti', 'Materazzi', 'Toni', 'Oddo', 'Zaccardo','De Rossi','Zidane'];
+var nomeUtente = prompt('Qual è il tuo cognome?');
+
 //
 // //Inserire la variabile che indica il messaggio di non entrata
-// var messaggio = 'Pussa via Crucco!';
-// var i = 0;
-//
+var messaggio = 'Pussa via Crucco!';
+var i = 0;
+
 // //Inserire le condizioni di entrata alla festa
-// while (i < listaInvitati.length) {
-//   var nomeCorrente = listaInvitati[i];
-//   if (nomeUtente == nomeCorrente) {
-//       //Inserire il messaggio di avvenuta vittoria e di entrata al party
-//     messaggio = 'Campioni del mondo,campioni del mondo,campioni del mondo!';
-//   }
-//   i++;
-// }
+while (i < listaInvitati.length) {
+  var nomeCorrente = listaInvitati[i];
+  if (nomeUtente == nomeCorrente) {
+      //Inserire il messaggio di avvenuta vittoria e di entrata al party
+    messaggio = 'Campioni del mondo,campioni del mondo,campioni del mondo!';
+  }
+  i++;
+}
 
 //Snake 4
 //Chiedi un numero di 4 cifre all’utente e calcola la somma
