@@ -109,3 +109,34 @@ for (var i = 0; 1 < numeroChiesto.length; i++) {
     var somma = somma + parseInt(numeroChiesto[i]);
 }
 console.log(somma);
+
+
+
+// Generatore di “nomi cognomi” casuali: prendendo una
+//lista di nomi e una lista di cognomi, Marcello Lippi vuole generare una falsa lista di invitati.
+
+
+//Lista nomi
+var name = ['gigi', 'fabio', 'alessandro', 'fabio', 'Johnatan', 'Francesco'];
+
+//Lista Cognnomi
+var surname = ['Buffon', 'Cannavaro', 'De rossi', 'Del piero', 'Camoranesi', 'Totti'];
+// Lista falsi nomi
+var falseList = 10;
+
+// Generare lista nomi falsi
+for (var i = 0; i < falseList; i++) {
+
+    // indico l elemento random dalla lista nomi
+    var elementiListaNomeRandom = Math.floor(Math.random() * name.length);
+    var nomiElencoRandom = name[elementiListaRandom];
+    // indico l elemento random dalla lista dei cognomi
+    var elementiListaCogomeRandom = Math.floor(Math.random() * surname.length);
+    var cognomiElencoRandom = surname[elementiListaRandom];
+
+    //creo un possibile risultato falso da una lista di nomi e cognomi presi random
+    var risultatoFalso = nomiElencoRandom + '' + cognomiElencoRandom;
+}
+
+//risultato generato random
+falseList.push(risultatoFalso);
